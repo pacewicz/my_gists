@@ -1,0 +1,15 @@
+== My Gists
+Aplikacja zaliczeniowa na laboratoria ASI. Prowadzący dr Włodzimierz Bzyl
+
+== Link do aplikacji na Heroku:
+http://mygists-pa.herokuapp.com/
+
+== Dodatkowe funkcje
+- Kolorowanie kodu na stronie głownej i podglądu,
+- Responsive web design
+
+== Użyte gemy (dodatkowe)
+- less-rails-bootstrap
+- bootstrap_form
+- populator
+- pygments.rb
