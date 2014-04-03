@@ -8,6 +8,6 @@
 
 Gist.populate(100..200) do |gist|
 	gist.snippet = ["public static class Test\n{\n}", "public static class Test2\n{\n}", "public static class Test3\n{\n}" ];
-	gist.lang = "csharp";
+	gist.lang = ["csharp", "java"];
 	gist.description = "from seeds.rb";
 end

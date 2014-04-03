@@ -1,0 +1,26 @@
+<h1>Listing gists</h1>
+	<% if @results.empty? %>
+        <span>There were no results for your query.</span><br/><br/>
+	<% else %>
+    <% @results.each do |gist| %>
+      <div class="gist gist-item ">
+    <div class="snippet">
+        <div class="bubble">
+            <div class="file-box">
+					<div class="byline">
+						<span>
+							<span class="btn">
+								<%= link_to 'Show', gist, class: "btn btn-default btn-sm"  %>
+							</span>
+							<div class="description"><%= gist.description %></div>
+						</span>
+					</div>
+					<%= raw Pygments.highlight(gist.snippet, lexer: gist.lang) %>
+            </div>
+        </div>
+    </div>
+</div>
+    <% end %>
+    <% end %>
+
+<br>

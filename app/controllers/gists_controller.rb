@@ -60,6 +60,14 @@ class GistsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def search
+	  if params[:query]
+		@results = Gist.search(params[:query])
+	  else
+		@results = []
+	  end
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
