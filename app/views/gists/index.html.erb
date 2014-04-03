@@ -1,31 +1,26 @@
 <h1>Listing gists</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Snippet</th>
-      <th>Lang</th>
-      <th>Description</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
 
-  <tbody>
+
+
     <% @gists.each do |gist| %>
-      <tr>
-        <td><%= gist.snippet[0,10] %>[…]</td>
-        <td><%= gist.lang %></td>
-        <td><%= gist.description %></td>
-        <td><%= link_to 'Show', gist, class: "btn btn-default btn-sm" %></td>
-        <td><%= link_to 'Edit', edit_gist_path(gist), class: "btn btn-default btn-sm" %></td>
-        <td><%= link_to 'Destroy', gist, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-sm" %></td>
-      </tr>
+      <div class="gist gist-item ">
+    <div class="snippet">
+        <div class="bubble">
+            <div class="file-box">
+					<div class="byline">
+						<span>
+							<span class="btn">
+								<%= link_to 'Show', gist, class: "btn btn-default btn-sm"  %>
+							</span>
+							<div class="description"><%= gist.description %></div>
+						</span>
+					</div>
+					<%= raw Pygments.highlight(gist.snippet, lexer: gist.lang) %>
+            </div>
+        </div>
+    </div>
+</div>
     <% end %>
-  </tbody>
-</table>
 
 <br>
-
-<%= link_to 'New Gist', new_gist_path, class: "btn btn-primary btn-lg" %>

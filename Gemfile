@@ -18,6 +18,7 @@ gem 'less-rails-bootstrap', '~> 3.1.1'
 gem 'bootstrap_form', github: 'bootstrap-ruby/rails-bootstrap-forms'
 gem 'faker', '~> 1.2.0'
 gem 'quiet_assets', '~> 1.0.2'
+gem 'populator'
 
 group :development, :test do
   gem 'rspec-rails'

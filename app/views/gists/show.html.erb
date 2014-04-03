@@ -17,4 +17,5 @@
 </p>
 
 <%= link_to 'Edit', edit_gist_path(@gist),  class: "btn btn-primary" %> |
+<%= link_to 'Destroy', @gist, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-sm" %>|
 <%= link_to 'Back', gists_path, class: "btn btn-default" %>

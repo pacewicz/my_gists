@@ -18,3 +18,137 @@ body {
 .starter-template {
   padding: 40px 15px;
 }
+.gist-item .description {
+color:rgba(51,51,51,0.75);
+display:block;
+font-size:12px;
+vertical-align:text-top;
+margin-top:20px;
+margin-left:42px;
+max-height:48px;
+overflow:hidden;
+text-overflow:ellipsis;
+width:440px;
+}
+.gist-item .byline {
+margin:3px 0 11px;
+}
+.gist-item .btn {
+float:right;
+}
+file-box highlight {
+max-height:200px;
+}
+.gist-item .metadata {
+font-size:11px;
+margin-left:42px;
+}
+.gist .column {
+width:100%;
+}
+.gist-item {
+margin-bottom:2em;
+position:relative;
+}
+
+.gist-item ul.meta {
+position:absolute;
+right:0;
+}
+
+.gist-item ul.meta>li {
+font-size:12px;
+font-weight:700;
+list-style-type:none;
+display:inline-block;
+margin-left:12px;
+}
+
+.gist-item ul.meta>li>a {
+display:block;
+text-decoration:none;
+color:#666;
+}
+
+.gist-item ul.meta>li>a:hover {
+color:#000;
+background:#fff;
+}
+
+.gist-item ul.meta>li .octicon {
+line-height:0.6;
+opacity:0.5;
+}
+
+.gist-item .byline {
+margin:3px 0 11px;
+}
+
+.gist-item .creator {
+color:rgba(51,51,51,0.75);
+display:block;
+font-size:13px;
+font-weight:300;
+padding-left:42px;
+position:relative;
+vertical-align:text-top;
+width:440px;
+}
+
+.gist-item .creator img {
+border-radius:3px;
+width:30px;
+height:30px;
+position:absolute;
+top:0;
+left:0;
+margin-left:3px;
+}
+
+.gist-item .description {
+color:rgba(51,51,51,0.75);
+display:block;
+font-size:12px;
+vertical-align:text-top;
+margin-top:6px;
+margin-left:42px;
+max-height:48px;
+overflow:hidden;
+text-overflow:ellipsis;
+width:95%;
+}
+
+.gist-item .metadata {
+font-size:11px;
+margin-left:42px;
+}
+
+.gist-item.vis-secret .bubble {
+background-color:#f8eec7;
+}
+
+.gist-item.vis-secret .file-box {
+border:1px solid #f7ca75;
+}
+
+.gist-item .bubble:hover {
+background-color:#d8eaf2;
+cursor:pointer;
+}
+
+.gist-item .bubble:hover .data,.gist-item .bubble:hover .readme {
+-webkit-touch-callout:none;
+-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none;
+}
+
+.gist-item .bubble:hover .file-box {
+border-color:#97c7dd;
+}
+
+.gist-item .bubble:hover .link-overlay {
+visibility:visible;
+}
