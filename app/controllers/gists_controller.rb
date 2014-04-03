@@ -67,6 +67,9 @@ class GistsController < ApplicationController
 	  else
 		@results = []
 	  end
+	  respond_to do |format|
+		format.html { render action: 'search', results: @results }
+	  end
   end
 
   private
